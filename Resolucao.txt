@@ -1,0 +1,70 @@
+1 - 
+public static void main(String[] args) {
+        int indice = 13;
+        int soma = 0;
+        int k = 0;
+
+        do {
+            k = k + 1;
+            soma = soma + k;
+        } while (k < indice);
+
+        System.out.println(soma);
+       
+    }
+
+Resposta: 91
+
+
+2 - 
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int numero = scanner.nextInt();
+
+        int numeroAnterior = 0;
+        int numeroAtual = 1;
+
+        while (numeroAtual < numero) {
+            int proximoNumero = numeroAnterior + numeroAtual;
+            numeroAnterior = numeroAtual;
+            numeroAtual = proximoNumero;
+        }
+
+        if (numeroAtual == numero) {
+            System.out.println(numero + " pertence à sequência de Fibonacci.");
+        } else {
+            System.out.println(numero + " não pertence à sequência de Fibonacci.");
+        }
+    }
+
+
+3 - 
+a) Somar 2, Resposta: 9
+b) Multiplicar por 2, Resposta: 128
+c) Elevar ao quadrado a sequência, 49
+d) 
+e) Somar os números anteriores, Resposta: 13 (8 + 5)
+f) 
+
+
+4 - Ambos estarão a mesma distância de Ribeirão preto, já que o carro está
+deixando a cidade e o caminhão está indo de encontro, ao se cruzarem a distância que o carro já percorreu será a distância que falta o caminhão percorrer.
+
+5 -
+public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        String palavra;
+        String invertida = "";
+        
+        System.out.print("Informe a palavra: ");
+        palavra = teclado.next();
+
+        for(int i = palavra.length()-1; i >= 0; i--) {
+            invertida += palavra.charAt(i);
+        }
+
+        System.out.println("Palavra original: " + palavra);
+        System.out.println("Palavra invertida: " + invertida);
+    }
